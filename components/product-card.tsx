@@ -1,12 +1,12 @@
 "use client";
 
-import { Button, Card, CardFooter, Image } from "@nextui-org/react";
+import { Card, CardFooter, Image } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 
-import { IProduct } from "@/types";
+import { IProducts } from "@/types";
 
 interface ProductCardProps {
-  model: IProduct;
+  model: IProducts;
 }
 
 export default function ProductCard({ model }: ProductCardProps) {
@@ -17,7 +17,7 @@ export default function ProductCard({ model }: ProductCardProps) {
       key={model.uuid}
       isFooterBlurred
       isPressable
-      className="border-none"
+      className="border-none size-fit"
       radius="lg"
       onPress={() => router.push(`/products/${model.uuid}`)}
     >
@@ -26,19 +26,9 @@ export default function ProductCard({ model }: ProductCardProps) {
         className="object-cover"
         src="https://nextui.org/images/hero-card.jpeg"
       />
-      <CardFooter className="justify-between before:bg-white/10 border-white/20 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-        <p className="text-medium text-white">{model.name}</p>
-        {/*         <Button
-          className="text-medium text-white bg-black/20"
-          color="default"
-          radius="lg"
-          size="sm"
-          variant="flat"
-          onPress={() => router.push(`/products/${model.uuid}`)}
-        >
-          {model.price}
-        </Button> */}
-        {model.price}
+      <CardFooter className="justify-around">
+        <p className="text-large dark:text-white">{model.name}</p>
+        {model.price === 0 ? "Free" : `${model.price} $`}
       </CardFooter>
     </Card>
   );

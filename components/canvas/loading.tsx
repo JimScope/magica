@@ -1,12 +1,8 @@
-import { useProgress } from "@react-three/drei";
-
 export function Loading() {
-  const { progress } = useProgress();
-
   return (
     <div className="flex h-96 w-full flex-col items-center justify-center">
       <svg
-        className="-ml-1 mr-3 size-5 animate-spin text-black"
+        className="-ml-1 mr-3 size-8 animate-spin text-black"
         fill="none"
         viewBox="0 0 24 24"
       >
@@ -24,7 +20,6 @@ export function Loading() {
           fill="currentColor"
         />
       </svg>
-      {progress}
     </div>
   );
 }

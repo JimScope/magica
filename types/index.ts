@@ -4,10 +4,16 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
   size?: number;
 };
 
-export type IProduct = {
+export type IProducts = {
   uuid: string;
   name: string;
-  price: string;
+  categories: string[];
+  price: number;
   img: string;
+};
+
+export type IProduct = IProducts & {
+  details: string;
+  vox: string;
   gltf: string;
 };
