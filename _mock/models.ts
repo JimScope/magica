@@ -1,4 +1,4 @@
-import { IProduct } from "@/types";
+import { IProduct } from "@/types"
 
 export const _models: IProduct[] = [
   {
@@ -93,4 +93,4 @@ export const _models: IProduct[] = [
     vox: "./_models/obj/cigarro.obj",
     details: "",
   },
-];
+]

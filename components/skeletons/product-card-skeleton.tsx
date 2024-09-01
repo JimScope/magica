@@ -1,4 +1,4 @@
-import { Card, CardFooter, Skeleton } from "@nextui-org/react";
+import { Card, CardFooter, Skeleton } from "@nextui-org/react"
 
 export default function ProductCardSkeleton() {
   return (
@@ -15,5 +15,5 @@ export default function ProductCardSkeleton() {
         </Skeleton>
       </CardFooter>
     </Card>
-  );
+  )
 }

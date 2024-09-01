@@ -21,5 +21,5 @@ export function Loading() {
         />
       </svg>
     </div>
-  );
+  )
 }

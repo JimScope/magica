@@ -1,5 +1,5 @@
-import { Canvas } from "@react-three/fiber";
-import { View } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber"
+import { View } from "@react-three/drei"
 
 export default function Scene() {
   return (
@@ -22,5 +22,5 @@ export default function Scene() {
         <View.Port />
       </Canvas>
     </div>
-  );
+  )
 }

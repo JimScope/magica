@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import { Card, CardFooter, Image } from "@nextui-org/react";
-import { useRouter } from "next/navigation";
+import { Card, CardFooter, Image } from "@nextui-org/react"
+import { useRouter } from "next/navigation"
 
-import { IProducts } from "@/types";
+import { IProducts } from "@/types"
 
 interface ProductCardProps {
-  model: IProducts;
+  model: IProducts
 }
 
 export default function ProductCard({ model }: ProductCardProps) {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <Card
@@ -31,5 +31,5 @@ export default function ProductCard({ model }: ProductCardProps) {
         {model.price === 0 ? "Free" : `${model.price} $`}
       </CardFooter>
     </Card>
-  );
+  )
 }

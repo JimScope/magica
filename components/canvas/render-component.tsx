@@ -1,10 +1,10 @@
-import { OrbitControls, Stage, useGLTF } from "@react-three/drei";
+import { OrbitControls, Stage, useGLTF } from "@react-three/drei"
 type ModelProps = {
-  model_url: string;
-};
+  model_url: string
+}
 
 export default function Model({ model_url }: ModelProps) {
-  const { scene } = useGLTF(model_url);
+  const { scene } = useGLTF(model_url)
 
   return (
     <>
@@ -13,5 +13,5 @@ export default function Model({ model_url }: ModelProps) {
       </Stage>
       <OrbitControls autoRotate />
     </>
-  );
+  )
 }

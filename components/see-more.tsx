@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { useState } from "react"
 
 type SeeMoreProps = {
-  text: string;
-  limit?: number;
-};
+  text: string
+  limit?: number
+}
 
 export default function SeeMore({ text, limit = 230 }: SeeMoreProps) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false)
 
   const handleToggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
+    setIsExpanded(!isExpanded)
+  }
 
   return (
     <p className="text-muted-foreground text-justify font-light">
@@ -24,5 +24,5 @@ export default function SeeMore({ text, limit = 230 }: SeeMoreProps) {
         {isExpanded ? "See less" : "See more"}
       </button>
     </p>
-  );
+  )
 }

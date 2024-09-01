@@ -1,9 +1,9 @@
-import React from "react";
-import { Chip } from "@nextui-org/react";
+import React from "react"
+import { Chip } from "@nextui-org/react"
 
 type CategoriesChipsProps = {
-  categories: string[];
-};
+  categories: string[]
+}
 
 export default function CategoriesChips({ categories }: CategoriesChipsProps) {
   return (
@@ -14,5 +14,5 @@ export default function CategoriesChips({ categories }: CategoriesChipsProps) {
         </Chip>
       ))}
     </div>
-  );
+  )
 }
