@@ -11,6 +11,7 @@
 		"format": "prettier --write \"./**/*.{js,jsx,ts,tsx}\""
 	},
 	"dependencies": {
+		"@hookform/resolvers": "^3.9.0",
 		"@nextui-org/button": "2.0.34",
 		"@nextui-org/code": "2.0.29",
 		"@nextui-org/input": "2.2.2",
@@ -38,8 +39,10 @@
 		"next-themes": "^0.2.1",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
+		"react-hook-form": "^7.53.0",
 		"supabase": "^1.190.0",
-		"three": "^0.165.0"
+		"three": "^0.165.0",
+		"zod": "^3.23.8"
 	},
 	"devDependencies": {
 		"@types/node": "20.5.7",

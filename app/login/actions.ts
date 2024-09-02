@@ -2,23 +2,23 @@
 
 import { revalidatePath } from "next/cache"
 import { redirect } from "next/navigation"
+import { FieldValues } from "react-hook-form"
 
 import { createClient } from "@/utils/supabase/server"
 
-export async function login(formData: FormData) {
+export async function login(formData: FieldValues) {
   const supabase = createClient()
 
   // type-casting here for convenience
   // in practice, you should validate your inputs
   const data = {
-    email: formData.get("email") as string,
-    password: formData.get("password") as string,
+    email: formData.email as string,
+    password: formData.password as string,
   }
 
   const { error } = await supabase.auth.signInWithPassword(data)
 
   if (error) {
-    console.log(error)
     redirect("/error")
   }
 
