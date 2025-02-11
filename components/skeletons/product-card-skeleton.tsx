@@ -1,4 +1,4 @@
-import { Card, CardFooter, Skeleton } from "@nextui-org/react"
+import { Card, CardFooter, Skeleton } from "@heroui/react"
 
 export default function ProductCardSkeleton() {
   return (

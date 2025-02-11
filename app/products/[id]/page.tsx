@@ -1,7 +1,7 @@
 "use client"
 
 import { useParams, useRouter } from "next/navigation"
-import { Button, Skeleton } from "@nextui-org/react"
+import { Button, Skeleton } from "@heroui/react"
 import { View } from "@react-three/drei"
 
 import CategoriesChips from "@/components/categories-chips"

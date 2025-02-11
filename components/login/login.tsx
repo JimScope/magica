@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import { useFormContext } from "react-hook-form"
-import { Button } from "@nextui-org/button"
-import { Card, CardBody } from "@nextui-org/react"
+import { Button } from "@heroui/button"
+import { Card, CardBody } from "@heroui/react"
 
 import RHFInput from "../form-hooks/rhf-input"
 
@@ -96,7 +96,7 @@ export default function Login() {
                   flex: "1 1 0%",
                   borderStyle: "none",
                   backgroundColor:
-                    "hsl(0 0% 100%/var(--nextui-divider-opacity,1))",
+                    "hsl(0 0% 100%/var(--heroui-divider-opacity,1))",
                 }}
               />
               <p
@@ -109,7 +109,7 @@ export default function Login() {
                   fontSize: "0.75rem",
                   lineHeight: "1rem",
                   color:
-                    "hsl(240 5.03% 64.9%/var(--nextui-default-500-opacity,1))",
+                    "hsl(240 5.03% 64.9%/var(--heroui-default-500-opacity,1))",
                 }}
               >
                 OR
@@ -127,7 +127,7 @@ export default function Login() {
                   flex: "1 1 0%",
                   borderStyle: "none",
                   backgroundColor:
-                    "hsl(0 0% 100%/var(--nextui-divider-opacity,1))",
+                    "hsl(0 0% 100%/var(--heroui-divider-opacity,1))",
                 }}
               />
             </div>

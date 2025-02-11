@@ -1,5 +1,5 @@
 import { Controller, useFormContext } from "react-hook-form"
-import { Input, InputProps } from "@nextui-org/react"
+import { Input, InputProps } from "@heroui/react"
 
 type RHFInputProps = Omit<InputProps, "name"> & {
   name: string
