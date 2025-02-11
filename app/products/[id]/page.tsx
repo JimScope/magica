@@ -1,48 +1,48 @@
-"use client";
+"use client"
 
-import { useParams, useRouter } from "next/navigation";
-import { Button, Skeleton } from "@nextui-org/react";
-import { View } from "@react-three/drei";
+import { useParams, useRouter } from "next/navigation"
+import { Button, Skeleton } from "@heroui/react"
+import { View } from "@react-three/drei"
 
-import CategoriesChips from "@/components/categories-chips";
-import StatsCard from "@/components/stats-card";
-import SeeMore from "@/components/see-more";
-import Model from "@/components/canvas/render-component";
-import { getProduct } from "@/components/lib/requests";
-import { useEffect, useState } from "react";
-import { IProduct } from "@/types";
-import { Loading } from "@/components/canvas/loading";
+import CategoriesChips from "@/components/categories-chips"
+import StatsCard from "@/components/stats-card"
+import SeeMore from "@/components/see-more"
+import Model from "@/components/canvas/render-component"
+import { getProduct } from "@/components/lib/requests"
+import { useEffect, useState } from "react"
+import { IProduct } from "@/types"
+import { Loading } from "@/components/canvas/loading"
 
 const ProductDetail = () => {
-  const { id } = useParams();
-  const router = useRouter();
-  const [product, setProduct] = useState<IProduct | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const { id } = useParams()
+  const router = useRouter()
+  const [product, setProduct] = useState<IProduct | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const productId = Array.isArray(id) ? id[0] : id;
-        const data = await getProduct(productId);
+        const productId = Array.isArray(id) ? id[0] : id
+        const data = await getProduct(productId)
         if (data) {
-          setProduct(data);
+          setProduct(data)
         } else {
-          setError("Product not found");
+          setError("Product not found")
         }
       } catch (err) {
-        setError("Error fetching product");
+        setError("Error fetching product")
       } finally {
-        setLoading(false);
+        setLoading(false)
       }
-    };
+    }
 
-    fetchProduct();
-  }, [id]);
+    fetchProduct()
+  }, [id])
 
-  if (loading) return <Loading />;
+  if (loading) return <Loading />
   if (product === null) {
-    return <div>{error}</div>;
+    return <div>{error}</div>
   }
 
   return (
@@ -87,7 +87,7 @@ const ProductDetail = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ProductDetail;
+export default ProductDetail

@@ -1,29 +1,29 @@
-"use client";
+"use client"
 
-import { useState, useEffect } from "react";
-import { getProducts } from "@/components/lib/requests";
-import ProductCard from "@/components/product-card";
-import ProductCardSkeleton from "@/components/skeletons/product-card-skeleton";
-import { IProducts } from "@/types";
+import { useState, useEffect } from "react"
+import { getProducts } from "@/components/lib/requests"
+import ProductCard from "@/components/product-card"
+import ProductCardSkeleton from "@/components/skeletons/product-card-skeleton"
+import { IProducts } from "@/types"
 
 export default function Home() {
-  const [models, setModels] = useState<IProducts[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [models, setModels] = useState<IProducts[]>([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function fetchProducts() {
       try {
-        const products = await getProducts();
-        setModels(products);
+        const products = await getProducts()
+        setModels(products)
       } catch (error) {
-        console.error("Failed to fetch products:", error);
+        console.error("Failed to fetch products:", error)
       } finally {
-        setLoading(false);
+        setLoading(false)
       }
     }
 
-    fetchProducts();
-  }, []);
+    fetchProducts()
+  }, [])
 
   return (
     <>
@@ -38,5 +38,5 @@ export default function Home() {
             ))}
       </section>
     </>
-  );
+  )
 }

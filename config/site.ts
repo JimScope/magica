@@ -1,69 +1,40 @@
-export type SiteConfig = typeof siteConfig;
+import { SiteConfig } from "types"
 
-export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
-  navItems: [
+export const siteConfig: SiteConfig = {
+  name: "Magica",
+  description:
+    "An open source application built using the new router, server components and everything new in Next.js 13.",
+  url: "https://tx.shadcn.com",
+  ogImage: "https://tx.shadcn.com/og.jpg",
+  mainNav: [
     {
-      label: "Home",
+      title: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      title: "Products",
+      href: "/products",
     },
     {
-      label: "Pricing",
+      title: "Pricing",
       href: "/pricing",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      title: "Docs",
+      href: "/docs",
     },
     {
-      label: "About",
+      title: "About",
       href: "/about",
     },
-  ],
-  navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      title: "Blog",
+      href: "/blog",
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    twitter: "https://twitter.com/shadcn",
+    github: "https://github.com/shadcn/taxonomy",
+    docs: "https://ui.shadcn.com",
   },
-};
+}

@@ -1,4 +1,4 @@
-import { Card, CardBody } from "@nextui-org/react";
+import { Card, CardBody } from "@heroui/react"
 
 export default function StatsCard() {
   return (
@@ -16,5 +16,5 @@ export default function StatsCard() {
         <span className="text-sm text-muted-foreground">Meshes</span>
       </div>
     </div>
-  );
+  )
 }

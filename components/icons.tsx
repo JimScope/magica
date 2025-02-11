@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from "react"
 
-import { IconSvgProps } from "@/types";
+import { IconSvgProps } from "@/types"
 
 export const Logo: React.FC<IconSvgProps> = ({
   size = 36,
@@ -22,7 +22,7 @@ export const Logo: React.FC<IconSvgProps> = ({
       fillRule="evenodd"
     />
   </svg>
-);
+)
 
 export const DiscordIcon: React.FC<IconSvgProps> = ({
   size = 24,
@@ -42,8 +42,8 @@ export const DiscordIcon: React.FC<IconSvgProps> = ({
         fill="currentColor"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const TwitterIcon: React.FC<IconSvgProps> = ({
   size = 24,
@@ -63,8 +63,8 @@ export const TwitterIcon: React.FC<IconSvgProps> = ({
         fill="currentColor"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const GithubIcon: React.FC<IconSvgProps> = ({
   size = 24,
@@ -86,8 +86,8 @@ export const GithubIcon: React.FC<IconSvgProps> = ({
         fillRule="evenodd"
       />
     </svg>
-  );
-};
+  )
+}
 
 export const MoonFilledIcon = ({
   size = 24,
@@ -109,7 +109,7 @@ export const MoonFilledIcon = ({
       fill="currentColor"
     />
   </svg>
-);
+)
 
 export const SunFilledIcon = ({
   size = 24,
@@ -131,7 +131,7 @@ export const SunFilledIcon = ({
       <path d="M12 22.96a.969.969 0 01-1-.96v-.08a1 1 0 012 0 1.038 1.038 0 01-1 1.04zm7.14-2.82a1.024 1.024 0 01-.71-.29l-.13-.13a1 1 0 011.41-1.41l.13.13a1 1 0 010 1.41.984.984 0 01-.7.29zm-14.28 0a1.024 1.024 0 01-.71-.29 1 1 0 010-1.41l.13-.13a1 1 0 011.41 1.41l-.13.13a1 1 0 01-.7.29zM22 13h-.08a1 1 0 010-2 1.038 1.038 0 011.04 1 .969.969 0 01-.96 1zM2.08 13H2a1 1 0 010-2 1.038 1.038 0 011.04 1 .969.969 0 01-.96 1zm16.93-7.01a1.024 1.024 0 01-.71-.29 1 1 0 010-1.41l.13-.13a1 1 0 011.41 1.41l-.13.13a.984.984 0 01-.7.29zm-14.02 0a1.024 1.024 0 01-.71-.29l-.13-.14a1 1 0 011.41-1.41l.13.13a1 1 0 010 1.41.97.97 0 01-.7.3zM12 3.04a.969.969 0 01-1-.96V2a1 1 0 012 0 1.038 1.038 0 01-1 1.04z" />
     </g>
   </svg>
-);
+)
 
 export const HeartFilledIcon = ({
   size = 24,
@@ -156,7 +156,7 @@ export const HeartFilledIcon = ({
       strokeWidth={1.5}
     />
   </svg>
-);
+)
 
 export const SearchIcon = (props: IconSvgProps) => (
   <svg
@@ -184,10 +184,10 @@ export const SearchIcon = (props: IconSvgProps) => (
       strokeWidth="2"
     />
   </svg>
-);
+)
 
 export const NextUILogo: React.FC<IconSvgProps> = (props) => {
-  const { width, height = 40 } = props;
+  const { width, height = 40 } = props
 
   return (
     <svg
@@ -211,5 +211,65 @@ export const NextUILogo: React.FC<IconSvgProps> = (props) => {
         d="M17.5667 9.21729H18.8111V18.2403C18.8255 19.1128 18.6 19.9726 18.159 20.7256C17.7241 21.4555 17.0968 22.0518 16.3458 22.4491C15.5717 22.8683 14.6722 23.0779 13.6473 23.0779C12.627 23.0779 11.7286 22.8672 10.9521 22.4457C10.2007 22.0478 9.5727 21.4518 9.13602 20.7223C8.6948 19.9705 8.4692 19.1118 8.48396 18.2403V9.21729H9.72854V18.1538C9.71656 18.8298 9.88417 19.4968 10.2143 20.0868C10.5362 20.6506 11.0099 21.1129 11.5814 21.421C12.1689 21.7448 12.8576 21.9067 13.6475 21.9067C14.4374 21.9067 15.1272 21.7448 15.7169 21.421C16.2895 21.1142 16.7635 20.6516 17.0844 20.0868C17.4124 19.4961 17.5788 18.8293 17.5667 18.1538V9.21729ZM23.6753 9.21729V22.845H22.4309V9.21729H23.6753Z"
       />
     </svg>
-  );
-};
+  )
+}
+
+export const GoogleIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => {
+  return (
+    <svg
+      height={size || height}
+      viewBox="0 0 48 48"
+      width={size || width}
+      {...props}
+    >
+      <path
+        d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917"
+        fill="#FFC107"
+      />
+      <path
+        d="m6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691"
+        fill="#FF3D00"
+      />
+      <path
+        d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.9 11.9 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44"
+        fill="#4CAF50"
+      />
+      <path
+        d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002l6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917"
+        fill="#1976D2"
+      />
+    </svg>
+  )
+}
+
+export const EmailIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  width,
+  height,
+  ...props
+}) => {
+  return (
+    <svg
+      height={size || height}
+      viewBox="0 0 24 24"
+      width={size || width}
+      {...props}
+    >
+      <path
+        clipRule="evenodd"
+        d="M3.172 5.172C2 6.343 2 8.229 2 12s0 5.657 1.172 6.828S6.229 20 10 20h4c3.771 0 5.657 0 6.828-1.172S22 15.771 22 12s0-5.657-1.172-6.828S17.771 4 14 4h-4C6.229 4 4.343 4 3.172 5.172M18.576 7.52a.75.75 0 0 1-.096 1.056l-2.196 1.83c-.887.74-1.605 1.338-2.24 1.746c-.66.425-1.303.693-2.044.693s-1.384-.269-2.045-.693c-.634-.408-1.352-1.007-2.239-1.745L5.52 8.577a.75.75 0 0 1 .96-1.153l2.16 1.799c.933.777 1.58 1.315 2.128 1.667c.529.34.888.455 1.233.455s.704-.114 1.233-.455c.547-.352 1.195-.89 2.128-1.667l2.159-1.8a.75.75 0 0 1 1.056.097"
+        fill="currentColor"
+        fillRule="evenodd"
+        style={{
+          border: "0px solid rgb(229, 231, 235)",
+          boxSizing: "border-box",
+        }}
+      />
+    </svg>
+  )
+}
